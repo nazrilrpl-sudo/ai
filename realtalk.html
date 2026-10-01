@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>REALTALK — AI Public Speaking Simulator</title>
+<link rel="icon" href="data:image/webp;base64,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">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&display=swap">
+<style>
+:root{--bg:#f4f2ee;--fg:#141416;--mut:#76757a;--line:#d9d6cf;--card:#ebe8e1;--ac:#4f46e5;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d0d0f;--fg:#efede8;--mut:#8a8990;--line:#27272b;--card:#151518;--ac:#7c78ff}}
+:root[data-theme="dark"]{--bg:#0d0d0f;--fg:#efede8;--mut:#8a8990;--line:#27272b;--card:#151518;--ac:#7c78ff}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box;margin:0}
+html,body{min-height:100%}
+body{background:var(--bg);color:var(--fg);font-family:Manrope,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+.scr{display:none;min-height:100vh;padding:28px clamp(20px,6vw,80px);animation:in .6s ease both}
+.scr.on{display:flex;flex-direction:column}
+@keyframes in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.logo img{height:28px;width:auto;vertical-align:middle;margin-right:10px;border-radius:7px}
+footer{padding:22px 20px 28px;text-align:center;font-size:12px;letter-spacing:.08em;color:var(--mut);border-top:1px solid var(--line)}
+body:has(#room.on) footer{display:none}
+.logo{font-weight:800;letter-spacing:.28em;font-size:13px}
+.top{display:flex;justify-content:space-between;align-items:center;padding-bottom:20px;border-bottom:1px solid var(--line)}
+.top nav{display:flex;gap:24px;font-size:13px;color:var(--mut)}
+.top nav button:hover{color:var(--fg)}
+.eyebrow{font-size:11px;letter-spacing:.22em;color:var(--mut);text-transform:uppercase}
+h1{font-size:clamp(40px,7.5vw,104px);line-height:.98;font-weight:300;letter-spacing:-.04em}
+h1 b{font-weight:800}
+h2{font-size:clamp(32px,5vw,60px);font-weight:300;letter-spacing:-.03em;line-height:1.05}
+.sub{color:var(--mut);max-width:440px;line-height:1.65;margin-top:22px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 28px;border-radius:8px;background:var(--fg);color:var(--bg);font-weight:700;font-size:13px;letter-spacing:.1em;transition:transform .25s,opacity .25s}
+.btn:hover{transform:translateY(-2px);opacity:.88}
+.btn.g{background:none;color:var(--fg);border:1px solid var(--line)}
+.btn.g:hover{border-color:var(--fg)}
+.hero{flex:1;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:40px 0}
+.cta{display:flex;gap:14px;margin-top:38px;flex-wrap:wrap}
+.vis{position:relative;display:grid;place-items:center}
+canvas{max-width:100%}
+.float{position:absolute;font-size:12px;color:var(--mut);border-left:2px solid var(--ac);padding-left:10px;max-width:190px;line-height:1.5;opacity:0;transition:opacity .8s}
+.float.on{opacity:1}
+.modes{margin:36px 0 28px;border-top:1px solid var(--line)}
+.mode{display:grid;grid-template-columns:56px 1fr auto 28px;align-items:center;gap:20px;width:100%;text-align:left;padding:22px 8px;border-bottom:1px solid var(--line);transition:padding .3s,background .3s}
+.mode:hover{padding-left:20px;background:var(--card)}
+.mode.sel{background:var(--card);box-shadow:inset 3px 0 var(--ac)}
+.mode svg{width:30px;height:30px;stroke:var(--fg);fill:none;stroke-width:1.5;transition:transform .4s}
+.mode:hover svg{transform:scale(1.18) rotate(-6deg)}
+.mode strong{font-size:15px;letter-spacing:.16em}
+.mode span{color:var(--mut);font-size:14px}
+.mode i{font-style:normal;opacity:0;transition:.3s}.mode:hover i,.mode.sel i{opacity:1;color:var(--ac)}
+.opts{display:flex;gap:48px;flex-wrap:wrap;margin-bottom:34px}
+.opts div{display:flex;flex-direction:column;gap:12px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{padding:9px 16px;border:1px solid var(--line);border-radius:6px;font-size:13px;color:var(--mut);transition:.2s}
+.chip.sel{border-color:var(--fg);color:var(--fg);background:var(--card)}
+.center{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:14px}
+.center .sub{margin:0 auto}
+.meta{display:flex;gap:48px;margin:18px 0}.meta div{font-size:14px}.meta small{display:block;color:var(--mut);font-size:11px;letter-spacing:.2em;margin-bottom:4px}
+.room{padding:0;height:100vh;height:100dvh;overflow:hidden}
+.rtop{display:flex;justify-content:space-between;padding:22px clamp(20px,6vw,80px);border-bottom:1px solid var(--line);font-size:12px;letter-spacing:.2em}
+.live{color:var(--ac)}.live::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--ac);margin-right:8px;animation:bl 1.4s infinite}
+@keyframes bl{50%{opacity:.2}}
+.stage{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;min-height:0;text-align:center;padding:0 20px}
+.stage canvas{width:min(46vh,340px);height:min(46vh,340px)}
+.stage h3{font-size:22px;font-weight:700;letter-spacing:.2em;margin-top:6px}
+.status{color:var(--ac);font-size:14px;min-height:22px;margin-top:6px}
+.cap{color:var(--mut);font-size:15px;max-width:560px;line-height:1.6;min-height:48px;margin-top:8px}
+.dock{border-top:1px solid var(--line);padding:16px 20px 22px;display:flex;flex-direction:column;align-items:center;gap:10px}
+.wf{display:flex;gap:3px;align-items:center;height:32px}.wf i{width:3px;height:4px;background:var(--ac);border-radius:2px;transition:height .12s}
+.mic{width:76px;height:76px;border-radius:50%;border:1px solid var(--fg);display:grid;place-items:center;font-size:24px;transition:.3s;position:relative}
+.mic:hover{background:var(--fg);color:var(--bg)}
+.mic.rec{background:var(--ac);border-color:var(--ac);color:#fff;animation:rp 1.6s infinite}
+@keyframes rp{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--ac) 50%,transparent)}100%{box-shadow:0 0 0 26px transparent}}
+.row{display:flex;gap:22px;font-size:12px;color:var(--mut)}.row button{opacity:.7}.row button:hover{opacity:1}
+.tin{display:none;width:min(560px,100%);gap:8px}.tin.on{display:flex}
+.tin input{flex:1;padding:14px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);font:inherit}
+.sheet{position:fixed;left:0;right:0;bottom:0;max-height:70vh;overflow:auto;background:var(--card);border-top:1px solid var(--line);border-radius:16px 16px 0 0;padding:26px clamp(20px,6vw,80px) 40px;transform:translateY(105%);transition:transform .5s cubic-bezier(.2,.8,.2,1);z-index:9}
+.sheet.on{transform:none}
+.sheet p{margin:14px 0;line-height:1.6;font-size:15px}.sheet b{display:block;font-size:10px;letter-spacing:.22em;color:var(--mut);margin-bottom:3px}
+.tick{width:84px;height:84px;border:1px solid var(--ac);border-radius:50%;display:grid;place-items:center;color:var(--ac);font-size:34px;animation:pop .8s both}
+@keyframes pop{from{transform:scale(.4);opacity:0}}
+.rep{max-width:960px;width:100%;margin:0 auto;padding-bottom:60px}
+.score{display:grid;place-items:center;margin:34px 0;position:relative}
+.score div{position:absolute;text-align:center}.score strong{font-size:78px;font-weight:300;letter-spacing:-.04em}.score small{color:var(--mut)}
+.asp{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));border-top:1px solid var(--line)}
+.asp div{padding:16px 0;border-bottom:1px solid var(--line);margin-right:24px}.asp small{font-size:10px;letter-spacing:.2em;color:var(--mut)}
+.asp b{display:block;font-size:26px;font-weight:300}.asp u{display:block;height:2px;background:var(--line);margin-top:8px;text-decoration:none}.asp u i{display:block;height:100%;background:var(--ac);width:0;transition:width 1.2s}
+.sec{margin-top:52px}.sec h4{font-size:11px;letter-spacing:.22em;color:var(--mut);font-weight:500;margin-bottom:14px}
+.sec p{line-height:1.7;max-width:640px}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:16px}.ba div{padding:18px;border:1px solid var(--line);border-radius:8px;line-height:1.6;font-size:14px}.ba small{display:block;font-size:10px;letter-spacing:.2em;color:var(--mut);margin-bottom:8px}.ba .af{border-color:var(--ac)}
+.hab{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0;border-top:1px solid var(--line)}.hab div{padding:18px 0}.hab b{display:block;font-size:30px;font-weight:300}.hab small{color:var(--mut);font-size:12px}
+.quote{font-size:clamp(20px,2.6vw,30px);line-height:1.35;font-weight:300;letter-spacing:-.01em;border-left:2px solid var(--ac);padding-left:22px;max-width:700px}
+.stats{display:flex;gap:56px;flex-wrap:wrap;margin:30px 0}.stats b{display:block;font-size:44px;font-weight:300}.stats small{color:var(--mut);font-size:12px}
+.fade{animation:in .6s both}
+@media(max-width:760px){.hero{grid-template-columns:1fr}.vis{order:-1;height:260px}.vis canvas{width:260px!important;height:260px!important}.float{display:none}.top nav{display:none}.mode{grid-template-columns:40px 1fr 20px}.mode span{grid-column:2}.mode i{display:none}.ba{grid-template-columns:1fr}.opts{gap:24px}.meta{gap:28px}.mic{width:84px;height:84px}}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01s!important;transition-duration:.01s!important}}
+</style></head><body>
+
+<section class="scr on" id="landing">
+ <div class="top"><span class="logo">REALTALK</span><nav><button onclick="go('how')">Cara Kerja</button><button onclick="go('progress')">Kemajuan</button></nav></div>
+ <div class="hero">
+  <div><div class="eyebrow">Simulator Public Speaking AI</div><h1 style="margin-top:22px">Latihan berbicara.<br><b>Bukan menjawab soal.</b></h1>
+  <p class="sub">Latih kemampuan berbicara melalui percakapan AI yang merespons seperti lawan bicara sungguhan.</p>
+  <div class="cta"><button class="btn" onclick="go('choose')">Mulai Simulasi →</button><button class="btn g" onclick="go('how')">Lihat Cara Kerja</button></div></div>
+  <div class="vis"><canvas id="hc" width="480" height="480" style="width:min(480px,100%)"></canvas><div class="float" id="f1" style="top:12%;left:0"></div><div class="float" id="f2" style="bottom:12%;right:0"></div></div>
+ </div>
+</section>
+
+<section class="scr" id="how">
+ <div class="top"><button class="logo" onclick="go('landing')">REALTALK</button><button onclick="go('choose')" style="font-size:13px;color:var(--mut)">Mulai →</button></div>
+ <div class="rep" style="padding-top:60px"><h2>Bukan soal.<br>Percakapan.</h2>
+ <div class="modes">
+  <div class="mode"><b style="font-weight:300;font-size:28px">01</b><strong>PILIH SITUASI</strong><span>Interview, presentasi, diskusi, dan lainnya.</span></div>
+  <div class="mode"><b style="font-weight:300;font-size:28px">02</b><strong>NGOBROL</strong><span>AI mengikuti jawabanmu, tanpa urutan soal tetap.</span></div>
+  <div class="mode"><b style="font-weight:300;font-size:28px">03</b><strong>DAPAT LAPORAN</strong><span>Setelah selesai, AI menjadi coach dan memberi feedback.</span></div>
+ </div><button class="btn" onclick="go('choose')">Mulai Simulasi →</button></div>
+</section>
+
+<section class="scr" id="choose">
+ <div class="top"><button class="logo" onclick="go('landing')">REALTALK</button><button onclick="go('progress')" style="font-size:13px;color:var(--mut)">Kemajuan</button></div>
+ <div class="rep" style="padding-top:44px"><h2>Mau latihan<br>di situasi apa?</h2><p class="sub">Pilih situasi yang ingin kamu simulasikan.</p>
+ <div class="modes" id="modes"></div>
+ <div class="opts">
+  <div><span class="eyebrow">Durasi Percakapan</span><span class="chips" id="o-len"></span></div>
+  <div><span class="eyebrow">Gaya Bicara</span><span class="chips" id="o-sty"></span></div>
+  <div><span class="eyebrow">Input</span><span class="chips" id="o-inp"></span></div>
+ </div><button class="btn" onclick="go('pre')">Lanjut →</button></div>
+</section>
+
+<section class="scr" id="pre">
+ <div class="top"><button class="logo" onclick="go('choose')">← REALTALK</button><span></span></div>
+ <div class="center">
+  <div class="eyebrow" id="p-mode"></div><div class="eyebrow" style="margin-top:20px">Lawan bicaramu</div>
+  <canvas id="pc" width="200" height="200" style="width:170px;height:170px"></canvas>
+  <h2 id="p-name"></h2><div id="p-role" class="sub" style="margin:0"></div>
+  <div class="meta"><div><small>TINGKAT</small>Menengah</div><div><small>DURASI</small><span id="p-dur"></span></div></div>
+  <p class="sub" style="font-size:14px">Lawan bicaramu akan menyesuaikan diri dengan jawabanmu.<br>Tidak ada urutan pertanyaan yang tetap.</p>
+  <button class="btn" onclick="start()" style="margin-top:14px">MULAI PERCAKAPAN →</button><div class="eyebrow" id="aimode"></div>
+ </div>
+</section>
+
+<section class="scr room" id="room">
+ <div class="rtop"><span id="r-title"></span><span class="live">LIVE</span><span id="clock">00:00</span></div>
+ <div class="stage"><canvas id="rc" width="680" height="680"></canvas>
+  <h3 id="r-name">ALEX</h3><div class="eyebrow">Lawan bicaramu</div><div class="status" id="status"></div><div class="cap" id="cap"></div></div>
+ <div class="dock">
+  <div class="wf" id="wf"></div>
+  <button class="mic" id="mic" onclick="micTap()" aria-label="Ketuk untuk bicara">🎙</button>
+  <div class="eyebrow" id="mic-l">Ketuk untuk bicara</div>
+  <div class="tin" id="tin"><input id="ti" placeholder="Ketik jawabanmu…" onkeydown="if(event.key==='Enter')sendText()"><button class="btn" onclick="sendText()">Kirim</button></div>
+  <div class="row"><button onclick="sheet(1)">Lihat percakapan</button><button onclick="endConv()" style="opacity:.4">Akhiri percakapan</button></div>
+ </div>
+ <div class="sheet" id="sheet"><div style="display:flex;justify-content:space-between"><span class="eyebrow">Transkrip</span><button onclick="sheet(0)">✕ Tutup</button></div><div id="tr"></div></div>
+</section>
+
+<section class="scr" id="done"><div class="center"><div class="eyebrow">Percakapan Selesai</div><div class="tick">✓</div><h2>Percakapanmu<br>sudah selesai.</h2><button class="btn" onclick="report()" style="margin-top:20px">LIHAT HASILKU</button></div></section>
+
+<section class="scr" id="report">
+ <div class="top"><button class="logo" onclick="go('landing')">REALTALK</button><button onclick="go('progress')" style="font-size:13px;color:var(--mut)">Kemajuan</button></div>
+ <div class="rep" style="padding-top:44px"><div class="eyebrow">Laporan bicaramu</div><h2 style="margin-top:12px">Begini caramu berkomunikasi<br>dalam percakapan ini.</h2>
+ <div class="score"><svg width="260" height="260" viewBox="0 0 260 260"><circle cx="130" cy="130" r="116" fill="none" stroke="var(--line)" stroke-width="3"/><circle id="ring" cx="130" cy="130" r="116" fill="none" stroke="var(--ac)" stroke-width="3" stroke-linecap="round" stroke-dasharray="729" stroke-dashoffset="729" transform="rotate(-90 130 130)" style="transition:stroke-dashoffset 1.6s cubic-bezier(.2,.8,.2,1)"/></svg><div><strong id="sc">0</strong><small>/100</small><br><span id="lbl" style="font-size:13px"></span><br><span id="conf" style="font-size:11px;color:var(--mut);display:block;max-width:190px;margin:6px auto 0"></span></div></div>
+ <div class="asp" id="asp"></div>
+ <div class="sec"><h4>RINGKASAN</h4><div class="hab" id="grp"></div></div>
+ <div class="sec"><h4>KONTEKS</h4><p id="ctx"></p></div>
+ <div class="sec"><h4>YANG SUDAH BAIK</h4><p id="well"></p></div>
+ <div class="sec"><h4>PERLU DITINGKATKAN</h4><p id="imp"></p>
+  <div class="ba"><div><small>SEBELUM</small><span id="bef"></span></div><div class="af"><small>SESUDAH · Komunikasi profesional</small><span id="aft"></span></div></div></div>
+ <div class="sec"><h4>PERFORMA RECOVERY</h4><p id="rec"></p></div>
+ <div class="sec"><h4>IMPROVEMENT SELAMA SESI</h4><p id="impr"></p></div>
+ <div class="sec"><h4>MOMEN TERBAIKMU</h4><p id="best"></p></div>
+ <div class="sec"><h4>MOMEN YANG PERLU DIPERBAIKI</h4><p id="worst"></p></div>
+ <div class="sec"><h4>KEBIASAAN BICARAMU</h4><div class="hab" id="hab"></div></div>
+ <div class="sec"><h4>POLA KESALAHAN</h4><p id="pat"></p></div>
+ <div class="sec"><h4>KATA COACH-MU</h4><p class="quote" id="coach"></p><p style="margin-top:22px"><b style="font-size:11px;letter-spacing:.2em;color:var(--mut)">LATIHAN BERIKUTNYA</b><br><span id="next"></span></p></div>
+ <div class="cta"><button class="btn" onclick="go('choose')">Latihan Lagi</button><button class="btn g" onclick="go('progress')">Lihat Kemajuan</button></div></div>
+</section>
+
+<section class="scr" id="progress">
+ <div class="top"><button class="logo" onclick="go('landing')">REALTALK</button><button onclick="go('choose')" style="font-size:13px;color:var(--mut)">Latihan →</button></div>
+ <div class="rep" style="padding-top:44px"><div class="eyebrow">Kemajuanmu</div><h2 style="margin-top:12px">Sedikit lebih baik,<br>setiap sesi.</h2>
+ <p id="empty" class="sub" style="margin-top:30px"></p><svg id="chart" viewBox="0 0 700 280" style="width:100%;margin-top:40px;overflow:visible"></svg>
+ <div class="stats"><div><b id="st1">0</b><small>Rangkaian hari berlatih</small></div><div><b id="st2">0</b><small>Total percakapan</small></div><div><b id="st3">0</b><small>Waktu latihan (menit)</small></div></div></div>
+</section>
+
+<footer>© 2026 @lilnaz. All rights reserved.</footer>
+<script>
+const MINI="data:image/webp;base64,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";document.querySelectorAll(".logo").forEach(e=>{const i=new Image();i.src=MINI;i.alt="";e.prepend(i)});
+const $=id=>document.getElementById(id);
+const S={mode:'INTERVIEW',len:5,sty:'Semi Formal',inp:'Voice',msgs:[],turn:0,t0:0,pause:[],lastAI:0,state:'idle'};
+const M={
+CASUAL:{n:'OBROLAN SANTAI',d:'Ngobrol dengan orang baru',p:'Sam',r:'Kenalan baru',nm:1,o:'Hai! Kita belum pernah ketemu ya. Aku Sam. Kamu siapa namanya?',q1:'Biasanya kegiatan kamu sehari-hari apa?',q:['Apa yang paling kamu suka dari kegiatan itu?','Kalau lagi libur, biasanya kamu ke mana?','Ada hal baru yang lagi pengin kamu coba?','Siapa orang yang paling berpengaruh di hidupmu?','Kalau boleh pilih, kamu pengin tinggal di kota mana?']},
+SCHOOL:{n:'SEKOLAH',d:'Berbicara dalam lingkungan sekolah',p:'Bu Rina',r:'Wali kelas',nm:1,o:'Selamat pagi. Saya Bu Rina. Siapa nama kamu?',q1:'Kamu kelas berapa, dan kegiatan apa yang kamu ikuti di sekolah?',q:['Pelajaran apa yang paling kamu nikmati, dan kenapa?','Pernah mengalami kesulitan di kelas? Bagaimana kamu mengatasinya?','Kalau diminta memimpin kerja kelompok, apa yang kamu lakukan?','Apa target kamu semester ini?','Pesan apa yang ingin kamu sampaikan ke teman-teman sekelas?']},
+PRESENTATION:{n:'PRESENTASI',d:'Latihan presentasi',p:'Dian',r:'Peserta presentasi',o:'Halo, kami siap mendengarkan. Silakan mulai: apa topik presentasimu hari ini?',q:['Kenapa topik itu penting untuk kami dengar?','Bisa kasih satu contoh nyata?','Apa tantangan terbesarnya menurut kamu?','Bagaimana kamu menyimpulkan presentasi ini dalam satu kalimat?','Kalau saya tidak setuju, bagaimana kamu menanggapinya?']},
+INTERVIEW:{n:'WAWANCARA',d:'Simulasi wawancara kerja',p:'Alex',r:'Pewawancara rekrutmen',nm:1,o:'Halo, terima kasih sudah datang. Saya Alex dari tim rekrutmen. Boleh saya tahu nama lengkap kamu?',q1:'Silakan ceritakan sedikit tentang dirimu, latar belakang pendidikan atau pengalamanmu.',q:['Apa yang membuat kamu memilih bidang itu?','Project apa yang paling kamu banggakan?','Ceritakan satu kegagalan dan apa yang kamu pelajari darinya.','Bagaimana cara kamu bekerja dalam tim?','Kenapa kami harus memilih kamu?']},
+GROUP:{n:'DISKUSI KELOMPOK',d:'Latihan diskusi',p:'Raka',r:'Anggota diskusi',o:'Oke, topik diskusi kita: apakah sekolah perlu mengizinkan HP di kelas? Menurut kamu bagaimana?',q:['Apa alasan utama kamu berpendapat begitu?','Bagaimana kalau ada yang bilang HP mengganggu fokus?','Adakah jalan tengah yang bisa disepakati bersama?','Aturan seperti apa yang menurut kamu adil?','Dari semua pendapat tadi, mana yang paling kamu setujui?']},
+BUSINESS:{n:'BISNIS',d:'Percakapan profesional',p:'Pak Dimas',r:'Calon klien',nm:1,o:'Selamat siang. Saya Dimas. Dengan siapa saya berbicara?',q1:'Bisa Anda jelaskan apa yang ditawarkan perusahaan Anda?',q:['Apa keunggulan utama dibanding kompetitor?','Berapa lama proses implementasinya?','Bagaimana Anda menangani keluhan pelanggan?','Apa risiko terbesar bagi kami?','Apa langkah selanjutnya yang Anda usulkan?']}};
+const ic={CASUAL:'<path d="M4 6h16v10H9l-5 4z"/>',SCHOOL:'<path d="M2 9l10-5 10 5-10 5zM6 12v5c3 2 9 2 12 0v-5"/>',PRESENTATION:'<rect x="3" y="4" width="18" height="12" rx="1"/><path d="M12 16v4M8 20h8"/>',INTERVIEW:'<circle cx="12" cy="8" r="4"/><path d="M4 21c0-5 4-7 8-7s8 2 8 7"/>',GROUP:'<circle cx="8" cy="9" r="3"/><circle cx="17" cy="10" r="2.5"/><path d="M2 20c0-4 3-6 6-6s6 2 6 6M15 15c4 0 7 1 7 5"/>',BUSINESS:'<rect x="3" y="7" width="18" height="13" rx="1"/><path d="M9 7V4h6v3M3 13h18"/>'};
+$('modes').innerHTML=Object.entries(M).map(([k,v])=>`<button class="mode ${k===S.mode?'sel':''}" data-k="${k}"><svg viewBox="0 0 24 24">${ic[k]}</svg><strong>${v.n}</strong><span>${v.d}</span><i>→</i></button>`).join('');
+$('modes').onclick=e=>{const b=e.target.closest('.mode');if(!b)return;S.mode=b.dataset.k;document.querySelectorAll('#modes .mode').forEach(x=>x.classList.toggle('sel',x===b))};
+function chips(id,arr,key,fmt){$(id).innerHTML=arr.map(v=>`<button class="chip ${S[key]==v?'sel':''}" data-v="${v}">${fmt?fmt(v):v}</button>`).join('');$(id).onclick=e=>{const b=e.target.closest('.chip');if(!b)return;S[key]=isNaN(b.dataset.v)?b.dataset.v:+b.dataset.v;[...$(id).children].forEach(x=>x.classList.toggle('sel',x===b))}}
+chips('o-len',[3,5,10],'len',v=>v+' menit');chips('o-sty',['Santai','Semi Formal','Formal'],'sty');chips('o-inp',['Voice','Text'],'inp',v=>v==='Voice'?'🎙 Voice':'⌨ Text');
+
+let cur='landing';
+function aiLabel(){const e=$('aimode');if(e)e.textContent=aiOn()?'● Mode AI aktif':'○ Mode lokal (demo, tanpa AI)'}
+function go(id){document.querySelectorAll('.scr').forEach(s=>s.classList.remove('on'));$(id).classList.add('on');cur=id;scrollTo(0,0);
+ if(id==='pre'){aiLabel();const m=M[S.mode];$('p-mode').textContent='SIMULASI '+m.n;$('p-name').textContent=m.p;$('p-role').textContent=m.r;$('p-dur').textContent='~'+S.len+' menit'}
+ if(id==='progress')drawProg()}
+
+/* ---------- presence orb ---------- */
+function orb(cv,getAmp,t,seed){const c=cv.getContext('2d'),W=cv.width,cs=getComputedStyle(document.documentElement),ac=cs.getPropertyValue('--ac').trim()||'#4f46e5',fg=cs.getPropertyValue('--fg').trim()||'#111';
+ c.clearRect(0,0,W,W);const a=getAmp(),R=W*.27;
+ for(let k=0;k<4;k++){c.beginPath();for(let i=0;i<=120;i++){const th=i/120*Math.PI*2,w=Math.sin(th*(3+k)+t*(.8+k*.3)+seed)*a*(10+k*5)*(W/480)+Math.sin(th*2-t*.5)*a*6*(W/480);const r=R+k*W*.035+w;const x=W/2+Math.cos(th)*r,y=W/2+Math.sin(th)*r;i?c.lineTo(x,y):c.moveTo(x,y)}c.closePath();c.strokeStyle=k?ac:fg;c.globalAlpha=k?.5-k*.1:.9;c.lineWidth=k?1.2:1.6;c.stroke()}
+ c.globalAlpha=1;const g=c.createRadialGradient(W/2,W/2,0,W/2,W/2,R);g.addColorStop(0,ac);g.addColorStop(1,'transparent');c.globalAlpha=.16+a*.2;c.fillStyle=g;c.beginPath();c.arc(W/2,W/2,R*(1+a*.05),0,7);c.fill();c.globalAlpha=1;
+ for(let i=0;i<14;i++){const th=i*.45+t*(.15+i%3*.05)*(i%2?1:-1),r=R*1.9+Math.sin(t+i)*8;c.fillStyle=ac;c.globalAlpha=.6;c.beginPath();c.arc(W/2+Math.cos(th)*r,W/2+Math.sin(th)*r,1.6+(i%3)*.5,0,7);c.fill()}c.globalAlpha=1}
+let amp={h:.35,r:.2,p:.5};
+function loop(ms){const t=ms/1000;
+ if(cur==='landing'){const sp=Math.sin(t*1.7)*.3+.6;orb($('hc'),()=>sp,t,0)}
+ if(cur==='pre')orb($('pc'),()=>.3,t,1);
+ if(cur==='room'){const speaking=S.state==='speaking',listen=S.state==='listening',think=S.state==='thinking';
+  const target=speaking?.55+Math.abs(Math.sin(t*6))*.4:listen?.35+Math.abs(Math.sin(t*3))*.15:think?.12:.15;amp.r+=(target-amp.r)*.08;orb($('rc'),()=>amp.r,t,2);
+  [...$('wf').children].forEach((b,i)=>b.style.height=listen?(4+Math.abs(Math.sin(t*5+i*.7))*26*Math.random()+2)+'px':'4px');
+  if(S.t0){const s=Math.floor((Date.now()-S.t0)/1000);$('clock').textContent=String(s/60|0).padStart(2,'0')+':'+String(s%60).padStart(2,'0')}}
+ requestAnimationFrame(loop)}
+$('wf').innerHTML='<i></i>'.repeat(36);requestAnimationFrame(loop);
+const F1=['"Halo, boleh perkenalan?"','"Menarik, ceritakan lebih…"'],F2=['● Mendengarkan…','● Berbicara…'];let fi=0;
+setInterval(()=>{const a=$('f1'),b=$('f2');a.classList.remove('on');b.classList.remove('on');setTimeout(()=>{a.textContent=F1[fi%2];b.textContent=F2[fi%2];a.classList.add('on');b.classList.add('on');fi++},900)},4200);
+
+/* ---------- conversation ---------- */
+function setState(s,txt){S.state=s;$('status').innerHTML=s==='thinking'?'● ● ●&nbsp; Berpikir…':txt}
+function say(t,cb){S.msgs.push({w:'ALEX',t});setState('speaking','Berbicara…');$('cap').textContent=t;const d=()=>{S.lastAI=Date.now();cb&&cb()};
+ try{if(S.inp==='Voice'&&speechSynthesis){speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang='id-ID';u.onend=d;speechSynthesis.speak(u);return}}catch(e){}
+ setTimeout(d,Math.min(5000,900+t.length*45))}
+function idle(){setState('idle','Mendengarkan…');$('mic-l').textContent=S.inp==='Voice'?'Ketuk untuk bicara':'Ketik jawabanmu';}
+function start(){const m=M[S.mode];S.msgs=[];S.turn=0;S.pause=[];S.eng={level:L2[S.mode]>=2?2:1,su:0,sd:0,mem:{name:'',goal:'',interest:'',facts:[],reasons:[],examples:[],strengths:[],weaknesses:[],topics:[]},hist:[],th:1,rec:[],lastRecall:0,secs:0,nt:0,aiFail:0,ai:0,fu:0,mq:1,qi:0,used:{},phase:'main',k:M[S.mode].nm?'name':'',cq:M[S.mode].o,type:'open',name:''};S.spk0=0;S.t0=Date.now();$('r-title').textContent='SIMULASI '+m.n;$('r-name').textContent=m.p.toUpperCase();
+ $('tin').classList.toggle('on',S.inp==='Text');$('mic').style.display=S.inp==='Voice'?'':'none';$('mic-l').style.display=S.inp==='Voice'?'':'none';
+ go('room');setState('thinking');setTimeout(()=>say(m.o,idle),1200)}
+let rec=null,recTxt='';
+function micTap(){if(S.state==='speaking'||S.state==='thinking')return;
+ if(S.state==='listening'){stopRec();return}
+ setState('listening','Mendengarkan kamu…');$('mic').classList.add('rec');$('mic').textContent='■';$('mic-l').textContent='Berhenti';recTxt='';S.spk0=0;
+ const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+ if(SR){try{rec=new SR();rec.lang='id-ID';rec.continuous=true;rec.interimResults=true;rec.onresult=e=>{S.spk0=S.spk0||Date.now();recTxt=[...e.results].map(r=>r[0].transcript).join(' ');$('cap').textContent='“'+recTxt+'”'};rec.onerror=()=>{};rec.start()}catch(e){rec=null}}}
+function stopRec(){$('mic').classList.remove('rec');$('mic').textContent='🎙';try{rec&&rec.stop()}catch(e){}
+ if(!recTxt.trim()){recTxt='(suara tidak terdeteksi — coba izinkan mikrofon atau pakai mode Text)'}
+ if(S.eng)S.eng.secs=S.spk0?(Date.now()-S.spk0)/1000:0;submit(recTxt)}
+function sendText(){const v=$('ti').value.trim();if(!v||S.state!=='idle')return;$('ti').value='';submit(v)}
+/* ================= CONVERSATION ENGINE (lokal) =================
+ Semua fungsi di bawah adalah analyzer lokal berbasis aturan untuk demonstrasi.
+ // AI API INTEGRATION HERE: ganti analyzeAnswer(), generateFollowUp(), dan generateReport()
+ dengan panggilan ke backend milikmu yang memanggil API AI. JANGAN taruh API key di frontend. */
+const L2={CASUAL:0,SCHOOL:1,GROUP:1,PRESENTATION:2,INTERVIEW:2,BUSINESS:2};
+const W={INTERVIEW:{rel:15,clr:15,str:15,pro:15,dep:10,fu:10,flu:10,ex:10},PRESENTATION:{rel:15,clr:20,str:20,dep:15,ex:10,flu:10,pro:10},BUSINESS:{rel:15,clr:15,str:10,pro:20,dep:15,fu:10,flu:5,ex:10},GROUP:{rel:20,clr:15,str:10,dep:20,pro:5,fu:15,flu:5,ex:10},SCHOOL:{rel:20,clr:20,str:10,dep:10,pro:15,fu:10,flu:10,ex:5},CASUAL:{rel:20,clr:20,str:5,dep:15,pro:5,fu:10,flu:20,ex:5}};
+const RX={reason:/\b(karena|sebab|alasan(nya)?|supaya|agar|soalnya|makanya|sehingga|dikarenakan)\b/i,ex:/\b(misalnya|contoh(nya)?|pernah|waktu itu|ketika saya|saat saya|project|proyek)\b|\d/i,slang:/\b(wkwk\w*|haha\w*|hehe|gue|gw|lu|loh|dong|sih|banget|bgt|emak|nggak|gak|ga|lol)\b/gi,joke:/wkwk|haha|hihi|lol|bercanda/i,fill:/\b(e{2,}|em{2,}|ehm|uh+|um+|anu|apa ya|ya kan|gitu)\b/gi,ev:/\b(entah|terserah|malas)\b/i,idk:/\b(gatau|gak tahu|nggak tahu|tidak tahu|ga tau|belum tahu|lupa)\b/i};
+const TR=[[/project|proyek|website|aplikasi|membuat|bikin/i,'Ada project yang pernah kamu buat dan paling kamu banggakan? Ceritakan prosesnya.'],[/gagal|kesulitan|susah|sulit|tantangan/i,'Bagaimana kamu menghadapi kesulitan itu, dan apa yang kamu pelajari?'],[/tim|kelompok|teman|bareng/i,'Bagaimana peranmu saat bekerja bersama orang lain?'],[/cita|target|rencana|ingin|pengin|mau/i,'Apa langkah konkret yang sudah kamu ambil untuk mencapainya?']];
+const HQ=['Kalau ada orang yang tidak setuju dengan pendapatmu, bagaimana kamu menanggapinya?','Kalau kamu berada dalam situasi kerja, bagaimana kamu akan menyampaikannya?'];
+const PQ={INTERVIEW:'Kalau kamu diberi tugas yang belum pernah kamu kerjakan sebelumnya, apa yang akan kamu lakukan?',PRESENTATION:'Bagaimana jika audiens tidak memahami penjelasanmu?',BUSINESS:'Kenapa kami harus memilih produk kamu dibandingkan kompetitor?',GROUP:'Pendapatmu berbeda dengan anggota tim. Bagaimana kamu menyampaikannya?',SCHOOL:'Kalau teman sekelas menertawakan pendapatmu, bagaimana kamu menanggapinya?',CASUAL:'Kalau lawan bicaramu tidak setuju dengan pilihanmu, apa yang kamu lakukan?'};
+const qType=q=>/kenapa|alasan|mengapa|apa yang membuat/i.test(q)?'why':/project|pernah|ceritakan|contoh|gagal/i.test(q)?'exp':'open';
+const cl=v=>Math.max(0,Math.min(100,Math.round(v)));
+function getName(t){/* hanya dipanggil saat AI meminta nama. Nama hanya diambil dari "nama saya X" / "saya X" (kapital) / jawaban pendek berupa nama */
+ const NO=/^(tinggal|sedang|lagi|dari|suka|kelas|siswa|siswi|mahasiswa|mahasiswi|bekerja|kerja|ingin|mau|baru|di|ke|seorang|anak|belajar|sekolah|kuliah|asal|dan|yang|adalah|orang|senang|hobi|punya|lahir)$/i,cap=w=>w.replace(/[^A-Za-z]/g,'').replace(/^\w/,c=>c.toUpperCase());
+ let m=t.match(/(?:\bnama(?:ku|\s+(?:saya|aku|gue|panggilan))?(?:\s+lengkap(?:ku|\s+saya)?)?(?:\s+adalah)?|\bpanggil\s+(?:saja\s+|aja\s+)?(?:saya|aku)|\b(?:saya|aku)\s+bernama)\s+([A-Za-z]{2,})(?:\s+([A-Za-z]{2,}))?/i);
+ if(m&&!NO.test(m[1])){let n=cap(m[1]);if(m[2]&&/^[A-Z]/.test(m[2])&&!NO.test(m[2]))n+=' '+cap(m[2]);return n}
+ m=t.match(/\b[Ss]aya\s+([A-Z][a-z]{1,})\b|\b[Aa]ku\s+([A-Z][a-z]{1,})\b/);if(m){const w=m[1]||m[2];if(!NO.test(w))return cap(w)}
+ const w=t.trim().replace(/[.!,]/g,'').split(/\s+/);if(w.length<=2&&w.every(x=>/^[A-Za-z]{2,}$/.test(x)&&!NO.test(x)))return w.map(cap).join(' ');
+ return''}
+function analyzeAnswer(t,c){const w=t.trim().split(/\s+/).filter(Boolean),n=w.length,lo=t.toLowerCase();
+ const kw=(c.q||'').toLowerCase().replace(/[^a-z\s]/g,'').split(/\s+/).filter(x=>x.length>3&&!/^(yang|untuk|kamu|saya|apa|bagaimana|dengan|dari|kalau|sudah|bisa|akan|silakan)$/.test(x)).map(x=>x.slice(0,5));
+ const ov=Math.min(3,new Set(kw.filter(k=>lo.includes(k))).size),reason=RX.reason.test(t),ex=RX.ex.test(t),slang=(t.match(RX.slang)||[]).length,joke=RX.joke.test(t),fill=(t.match(RX.fill)||[]).length,
+ spec=/\d/.test(t)||/\s[A-Z][a-z]{2,}/.test(t)||w.some(x=>x.length>=10),close=n>15&&/\b(jadi|intinya|kesimpulannya|itulah)\b/i.test(t.slice(-90)),
+ rep=n>8&&new Set(w.map(x=>x.toLowerCase())).size/n<.55,ev=RX.ev.test(t);
+ let L=L2[c.mode];if(c.sty==='Santai')L=Math.max(0,L-1);if(c.sty==='Formal')L=Math.min(2,L+1);
+ const off=ov===0&&(n>=25||n>=8&&!reason&&!ex),point=n>=4;
+ const rel=cl((off?35:40)+ov*14+reason*15+(n>=5?10:0)+ex*5),clr=cl(50+(n>=5&&n<=50?15:0)-(n>60?15:0)+(/\b(dan|tapi|jadi|karena|sehingga)\b/i.test(t)?10:0)+point*5-rep*20-(n<4?25:0)-(slang&&L==2?5:0)),
+ dep=cl(20+reason*28+ex*30+spec*12+Math.min(10,n/4)-(ev?20:0)),str=cl(35+point*10+reason*20+ex*20+close*10-(n<5?10:0)),
+ flu=cl(96-fill*7-rep*18-(fill/Math.max(1,n)>.08?10:0)),pro=cl(90-slang*(L==2?16:L==1?7:0)-(joke?(L==2?18:L==1?8:0):0)),exs=ex?100:reason?55:30;
+ let weak='ok';
+ if(RX.idk.test(t))weak='idk';else if(ev)weak='evasive';else if(joke&&L>=1||slang>=2&&L==2)weak='tone';else if(off)weak='off';else if(n<6&&!reason)weak='shallow';else if(reason&&n<9&&!spec&&/\b(keren|bagus|asik|seru|enak|menarik|mantap|aja|doang)\b/i.test(t))weak='shallow';
+ else if(c.type==='why'&&!reason&&n<25)weak='noReason';else if(c.type==='exp'&&!ex&&n<30)weak='noExample';else if(n>=60||n>=40&&str<55)weak=n>=60?'long':'unstr';
+ const wt=W[c.mode],q=(rel*wt.rel+clr*wt.clr+dep*wt.dep+str*wt.str+pro*wt.pro)/(wt.rel+wt.clr+wt.dep+wt.str+wt.pro)-(weak!=='ok'?6:0);
+ return{t,n,rel,clr,spc:dep,dep,str,pro,flu,exs,fill,slang,reason,ex,weak,issue:weak,q:cl(q),src:'local'}}
+/* ===== ENGINE v3. AI = sumber utama analisis semantik. analyzeAnswer() di atas HANYA fallback saat AI tidak tersedia / gagal. ===== */
+const STR=['spesifik','alasan','contoh','gali','klarifikasi','recovery','struktur','next_topic','closing'];
+const ISS={ok:'ok',umum:'shallow',terlalu_pendek:'shallow',tanpa_alasan:'noReason',tanpa_contoh:'noExample',tidak_jelas:'unstr',tidak_relevan:'off',bercanda:'tone',tidak_tahu:'idk',melebar:'long',menghindar:'evasive'};
+const LBL={shallow:'terlalu umum atau singkat',noReason:'belum disertai alasan',noExample:'belum disertai contoh',unstr:'kurang terstruktur',off:'kurang relevan dengan pertanyaan',tone:'gaya bahasa kurang sesuai situasi',idk:'belum tahu jawabannya',evasive:'menghindar dari pertanyaan',long:'terlalu melebar'};
+const casualOK=()=>S.mode==='CASUAL'||(S.sty==='Santai'&&L2[S.mode]<2);
+const TGT=()=>({3:3,5:5,10:8})[S.len];
+const timeUp=()=>(Date.now()-S.t0)/1000>=S.len*60;
+const aiOn=()=>!!(SM||window.REALTALK_API);
+/* AI API INTEGRATION: set window.REALTALK_API ke endpoint backend. Backend menerima {prompt} dan mengembalikan JSON (objek atau string). API key hanya di server. */
+async function aiCall(prompt){if(window.REALTALK_API){const r=await fetch(window.REALTALK_API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({prompt})});if(!r.ok)throw new Error('http '+r.status);const ct=r.headers.get('content-type')||'';return ct.includes('json')?r.json():r.text()}return SM.json(prompt,{cache:false})}
+/* parser JSON aman: objek / string / berpagar ```json / koma sisa / hanya assistant_message yang bisa diselamatkan */
+function parseAI(r){if(r&&typeof r==='object'&&!Array.isArray(r)){if(r.assistant_message||r.analysis)return r;r=typeof r.text==='string'?r.text:typeof r.content==='string'?r.content:Array.isArray(r.content)?r.content.map(x=>x.text||'').join(''):typeof r.response==='string'?r.response:''}
+ if(typeof r!=='string')return null;let q=r.replace(/```json|```/gi,'').trim();const i=q.indexOf('{'),k=q.lastIndexOf('}');if(i<0||k<i)return null;q=q.slice(i,k+1);
+ for(const f of[x=>x,x=>x.replace(/,\s*([}\]])/g,'$1'),x=>x.replace(/,\s*([}\]])/g,'$1').replace(/[\u201c\u201d]/g,'"')])try{const o=JSON.parse(f(q));if(o&&typeof o==='object')return o}catch(e){}
+ const m=q.match(/"assistant_message"\s*:\s*"((?:[^"\\]|\\.)*)"/);return m?{assistant_message:m[1].replace(/\\n/g,' ').replace(/\\"/g,'"')}:null}
+function normAI(j){const x=j&&j.analysis;if(!x||typeof x!=='object')return null;const ks={rel:'relevance',clr:'clarity',spc:'specificity',dep:'depth',str:'structure',pro:'professionalism'},v={};let c=0;
+ for(const k in ks){const n=Math.round(+x[ks[k]]);if(n>=1&&n<=5){v[k]=n;c++}}if(c<4)return null;const av=Object.values(v).reduce((a,b)=>a+b,0)/c;for(const k in ks)if(!v[k])v[k]=Math.round(av);
+ return{...v,reason:x.has_reason===true||x.has_reason==='true',ex:x.has_example===true||x.has_example==='true',issue:String(x.issue||'ok').toLowerCase().trim(),evidence:String(x.evidence||'').slice(0,240),eb:x.evidence_by&&typeof x.evidence_by==='object'?x.evidence_by:null,fl:Array.isArray(x.filler_words)?x.filler_words.map(String).slice(0,12):null}}
+function fromAI(t,z){const wt=W[S.mode],n=t.trim().split(/\s+/).filter(Boolean).length,K=k=>z[k]*20,dq=(K('dep')+K('spc'))/2;
+ const a={t,n,rel:K('rel'),clr:K('clr'),spc:K('spc'),dep:K('dep'),str:K('str'),pro:K('pro'),reason:z.reason,ex:z.ex,weak:ISS[z.issue]||'ok',issue:z.issue,evidence:z.evidence,eb:z.eb,fill:z.fl?z.fl.length:(t.match(RX.fill)||[]).length,src:'ai'};
+ a.q=cl((a.rel*wt.rel+a.clr*wt.clr+dq*wt.dep+a.str*wt.str+a.pro*wt.pro)/(wt.rel+wt.clr+wt.dep+wt.str+wt.pro));a.exs=a.ex?100:a.reason?55:30;a.flu=cl(96-a.fill*7);return a}
+/* ---- memory ---- */
+function mergeMem(E,u,a){if(!u||typeof u!=='object')return;const m=E.mem,bad=a&&(['off','idk','evasive'].includes(a.weak)||a.rel<45),cs=x=>String(x==null?'':x).replace(/\s+/g,' ').trim().slice(0,120);
+ if(u.goal&&!bad)m.goal=cs(u.goal);if(u.interest&&!bad){const i=cs(u.interest);if(!m.interest)m.interest=i;else if(i.toLowerCase()!==m.interest.toLowerCase()&&!m.topics.includes(i))m.topics.push(i)}
+ for(const k of['facts','reasons','examples','strengths','weaknesses','topics']){if(bad&&k!=='weaknesses'&&k!=='topics')continue;for(const x of[].concat(u[k]||[])){const v=cs(x);if(v.length>2&&!m[k].some(y=>y.toLowerCase()===v.toLowerCase())){m[k].push(v);if(m[k].length>12)m[k].shift()}}}}
+function memorize(E,t,a){const r=t.match(/(?:suka|tertarik(?: pada| dengan)?|hobi|membuat|bikin)\s+((?:[a-z]+ ?){1,3}?)(?=[,.]|$| dan | karena| sejak| dari| di )/i),g=t.match(/(?:ingin|pengin|bercita-cita|mau)\s+(?:menjadi\s+|jadi\s+)?([^,.]{4,50})/i),u={weaknesses:a.weak!=='ok'?[LBL[a.weak]]:[]};
+ if(r)u.interest=r[1].trim();if(g&&a.q>=55)u.goal=g[1].trim();if(a.reason&&a.q>=55)u.reasons=[t.slice(0,80)];if(a.ex)u.examples=[t.slice(0,80)];mergeMem(E,u,a)}
+function recall(E){const m=E.mem,c=[];if(m.interest)c.push(['i:'+m.interest,'Tadi kamu menyebut '+m.interest+'. Hal apa dari itu yang paling membuatmu tertarik?']);
+ if(m.goal)c.push(['g:'+m.goal,'Tadi kamu bilang tujuanmu '+m.goal+'. Langkah apa yang sudah kamu ambil ke arah itu?']);
+ m.examples.slice(-1).forEach(x=>c.push(['e:'+x,'Tadi kamu bercerita tentang "'+x+'". Bagian mana yang paling sulit buatmu?']));m.facts.slice(-1).forEach(x=>c.push(['f:'+x,'Tadi kamu menyebut bahwa '+x+'. Bagaimana hal itu memengaruhi pilihanmu?']));
+ return c.find(([k])=>!E.used[k])}
+function recallHint(E){if(E.hist.length-E.lastRecall<3)return'';const r=recall(E);if(!r)return'';E.used[r[0]]=1;E.lastRecall=E.hist.length;return'KESEMPATAN RECALL: sambungkan pertanyaan berikutnya dengan memori ini secara natural, contoh gaya: "'+r[1]+'"'}
+/* ---- adaptive difficulty: konsistensi, recovery, kedalaman, alasan/contoh, follow-up, pressure ---- */
+function updateLevel(E,a){const R=E.rec,good=a.q>=72&&a.rel>=65&&a.weak==='ok',strong=good&&a.reason&&(a.ex||a.dep>=70),hard=(a.q<50||['off','idk','evasive'].includes(a.weak))&&!a.improved;
+ R.push({good,strong,hard,imp:!!a.improved});if(R.length>6)R.shift();const last=n=>R.slice(-n),streak=n=>last(n).length===n&&last(n).every(x=>x.good||x.imp);
+ if(E.level<3&&streak(2)&&last(2).some(x=>x.strong)){E.level++;R.length=0}
+ else if(E.level===3&&streak(3)&&last(3).filter(x=>x.strong).length>=2){E.level=4;R.length=0}
+ else if(a.level>=4&&hard){E.level=3;R.length=0}
+ else if(last(3).filter(x=>x.hard).length>=2&&E.level>1){E.level--;R.length=0}}
+function commit(a,E){a.qtext=E.cq;a.rootQ=E.rq||E.cq;a.thread=E.th;a.step=E.fu;a.level=E.level;a.secs=E.secs||0;E.secs=0;a.wpm=a.secs>3?Math.round(a.n/a.secs*60):null;
+ const pv=[...E.hist].reverse().find(x=>x.thread===a.thread);a.improved=pv?(typeof a.improved==='boolean'?a.improved:a.q>=pv.q+10):false;E.hist.push(a);updateLevel(E,a)}
+/* ---- strategi follow-up berdasarkan kelemahan (dipakai fallback & saat AI tidak memberi pesan) ---- */
+function strategyFor(a,E){const w=a.weak,f=E.fu;
+ if(['idk','evasive','off','tone'].includes(w))return f===0?'recovery':'next_topic';
+ if(w==='long'||w==='unstr')return f===0?'struktur':'next_topic';
+ if(w==='shallow')return f<2?'spesifik':'next_topic';if(w==='noReason')return f<2?'alasan':'next_topic';if(w==='noExample')return f<2?'contoh':'next_topic';
+ if(a.reason&&!a.ex&&a.q<85&&f<1&&S.mode!=='CASUAL')return'contoh';
+ if(a.ex&&a.q<92&&f<1&&E.th%2===0)return'gali';
+ if(!a.reason&&a.q<75&&f<1)return'spesifik';return'next_topic'}
+function FUM(st,a){const mn=M[S.mode].n.toLowerCase();return({
+ recovery:{idk:'Tidak apa-apa, jujur itu baik. Coba jawab berdasarkan hal yang kamu ketahui saja, sekecil apa pun.',off:'Jawabanmu belum menyambung dengan pertanyaannya. Coba kembali ke inti pertanyaan tadi.',evasive:'Aku butuh jawaban yang lebih langsung. Coba fokus pada satu alasan utamanya.',tone:'Kalau dalam situasi '+mn+', jawaban itu kurang tepat. Coba sampaikan ulang dengan bahasa yang lebih sesuai dan alasan yang jelas.'}[a.weak],
+ struktur:a.weak==='long'?'Informasinya lengkap, tetapi mulai melebar. Coba sampaikan intinya dalam 1–2 kalimat.':'Coba jawab ulang dengan lebih terstruktur: inti jawabannya dulu, lalu alasannya.',
+ spesifik:casualOK()?'Menarik. Bisa ceritakan sedikit lebih detail?':a.n<6?'Bisa kamu elaborasi sedikit lagi?':'Kalau dalam '+mn+', jawaban tersebut masih terlalu umum. Coba jelaskan alasan yang lebih spesifik.',
+ alasan:'Apa alasan di balik itu?',contoh:'Alasanmu sudah jelas. Bisa kasih satu contoh konkretnya?',klarifikasi:'Bisa dijelaskan maksudnya sedikit lebih jelas?',gali:'Menarik. Apa yang paling kamu pelajari dari pengalaman itu?'})[st]}
+function localReply(a,E,t){const st=strategyFor(a,E),f=st!=='next_topic'&&E.fu<2?FUM(st,a):null;if(f){E.fu++;return{t:f}}
+ const wasFu=E.fu>0;E.fu=0;const react=wasFu&&a.improved?'Nah, jawabanmu sekarang lebih jelas dari tadi.':a.q>=80&&E.th%2?'Jawabanmu jelas.':'Baik.';
+ if(E.mq>=TGT()||timeUp()){E.phase='closing';return{t:react+' '+(S.mode==='CASUAL'?'Obrolan yang menyenangkan. Ada hal lain yang ingin kamu tambahkan sebelum kita selesai?':'Dari jawabanmu saya sudah mendapatkan gambaran yang cukup. Sebelum kita akhiri, apakah ada hal yang ingin kamu tambahkan?')}}
+ const q=pickQ(E,t);E.th++;E.mq++;E.cq=E.rq=q;E.type=qType(q);(E.asked=E.asked||[]).push(q);return{t:react+' '+q}}
+function pickQ(E,t){const m=M[S.mode],H=E.hist,lv=E.level;
+ if(lv>=3&&!E.used.pq){E.used.pq=1;return PQ[S.mode]}if(lv>=4)for(const q of HQ)if(!E.used[q]){E.used[q]=1;return q}
+ if(H.length-E.lastRecall>=3){const r=recall(E);if(r){E.used[r[0]]=1;E.lastRecall=H.length;return r[1]}}
+ for(const[r,q]of TR)if(r.test(t)&&!E.used[q]&&q!==E.cq){E.used[q]=1;return q}
+ while(E.qi<m.q.length){const q=m.q[E.qi++];if(!E.used[q]){E.used[q]=1;return q}}return'Adakah hal lain yang menurutmu penting untuk kamu sampaikan?'}
+function nameStep(t){const E=S.eng,m=M[S.mode],n=getName(t);if(!n&&!E.nt){E.nt=1;return{t:'Maaf, saya belum menangkap namamu. Boleh sebut namamu saja?'}}
+ E.k='';E.mem.name=n;E.cq=E.rq=m.q1;E.th=1;E.fu=0;E.type=qType(m.q1);E.mq++;E.asked=[m.o,m.q1];return{t:'Senang berkenalan'+(n?' denganmu, '+n:'')+'. '+m.q1}}
+/* ---- jalur lokal (fallback / demo) ---- */
+function respond(t){const E=S.eng;if(E.phase==='closing'){E.phase='done';return{t:'Terima kasih atas jawabannya. Sesi latihan kita selesai. Sekarang saya akan memberikan evaluasi.',end:1}}
+ if(E.k==='name')return nameStep(t);const a=analyzeAnswer(t,{mode:S.mode,sty:S.sty,q:E.cq,type:E.type});commit(a,E);memorize(E,t,a);return localReply(a,E,t)}
+/* ---- jalur AI (utama) ---- */
+async function respondAI(t){const E=S.eng,m=M[S.mode],el=(Date.now()-S.t0)/1000,wrap=E.mq>=TGT()||timeUp(),rh=recallHint(E);
+ const prev=E.hist.slice(-2).map(x=>({pertanyaan:x.qtext,issue:x.issue||x.weak,skor:x.q,alasan:x.reason,contoh:x.ex,bukti:x.evidence}));
+ const prompt=`Kamu adalah ${m.p} (${m.r}) dalam simulasi latihan public speaking REALTALK. Kamu lawan bicara sekaligus COACH: DENGARKAN > PAHAMI > INGAT > TANYA LANJUT > TANTANG > COACH > EVALUASI. Bahasa Indonesia, 1-3 kalimat, natural, jangan memuji setiap jawaban.
+KONTEKS: mode=${m.n}; gaya pengguna=${S.sty}; input=${S.inp}; level kesulitan=${E.level} (1 Basic, 2 Developing, 3 Professional, 4 Pressure); durasi sesi=${S.len} menit, berjalan ${Math.round(el)} detik; pertanyaan utama ke-${E.mq} dari target ${TGT()}; follow-up pada topik ini=${E.fu} (maks 2).
+PERTANYAAN SAAT INI: ${JSON.stringify(E.cq)} (pertanyaan awal topik: ${JSON.stringify(E.rq||E.cq)})
+JAWABAN TERAKHIR PENGGUNA: ${JSON.stringify(t)}
+ATURAN ANALISIS:
+1. Nilai MAKNA jawaban terhadap pertanyaan (semantik). DILARANG memakai kata kunci, tumpang tindih kata, atau jumlah kata sebagai dasar. Jawaban 8 kata bisa sangat bagus; 50 kata bisa buruk bila tidak menjawab. Contoh: untuk "Apa yang membuat kamu memilih RPL?", "Karena saya ingin punya kemampuan untuk membuat aplikasi sendiri" RELEVAN walau tanpa kata "project"; "Karena kemarin saya beli bakso sama teman" TIDAK RELEVAN (issue=tidak_relevan, relevance 1).
+2. Skor 1-5 per dimensi (relevance, clarity, specificity, depth, structure, professionalism) WAJIB disertai bukti: isi "evidence_by" (satu kalimat per dimensi, merujuk isi jawaban) dan "evidence" (ringkasan). Tanpa alasan = tidak boleh memberi angka.
+3. Standar sesuai mode & gaya: Casual/Santai longgar soal bahasa informal (jangan beri issue=bercanda). School semi formal. Presentation: struktur & kejelasan. Interview: profesionalisme, relevansi, alasan, contoh. Business: profesionalisme, value, solusi, risiko. Group: argumen, mendengarkan, kompromi, respons terhadap perbedaan. Bercanda di mode/gaya formal: issue=bercanda, beri coaching + kesempatan memperbaiki.
+4. Strategi follow-up: bagus tapi umum > spesifik (minta detail); ada alasan tanpa bukti > contoh; ada contoh > gali (pengalaman/insight); tanpa alasan > alasan; tidak relevan > recovery (arahkan kembali); terlalu panjang > struktur (minta inti); terlalu pendek > spesifik; ragu/tidak jelas > klarifikasi (bantu kembangkan); tidak tahu > recovery (jangan menghukum, arahkan menjawab dari hal yang diketahui). Jika jawaban sudah sangat baik > next_topic. Follow-up hanya bila perlu, maksimal 2 per topik. JANGAN mengakhiri sesi karena jawaban buruk; "should_end" hanya true bila pengguna meminta berhenti.
+5. "improved"=true bila jawaban ini lebih baik daripada jawaban sebelumnya pada topik yang sama (lihat ANALISIS SEBELUMNYA); jangan menghukum jawaban buruk, beri jalan memperbaiki.
+6. MEMORI: gunakan dalam percakapan (mis. "Tadi kamu bilang suka membuat website..."), jangan tanya ulang hal yang sudah diketahui/ditanyakan. ${rh||'Hubungkan dengan memori bila relevan.'} Isi memory_update hanya info relevan dari jawaban ini (jangan simpan jawaban tidak relevan, jangan simpan nama atau lokasi sebagai nama).
+7. Level 3-4: boleh pertanyaan situasional/pressure sesuai mode. Jangan menilai kontak mata, bahasa tubuh, ekspresi, volume, atau intonasi (hanya teks yang tersedia). filler_words hanya yang tampak di teks.
+8. ${wrap?'WAKTU/KUOTA HABIS: tutup natural dengan menanyakan apakah ada yang ingin ditambahkan, tanpa pertanyaan baru; follow_up_strategy="closing".':'Lanjutkan percakapan; next_question = pertanyaan yang kamu ajukan di assistant_message.'}
+MEMORI: ${JSON.stringify(E.mem)}
+SUDAH DITANYAKAN: ${JSON.stringify((E.asked||[]).slice(-10))}
+ANALISIS SEBELUMNYA: ${JSON.stringify(prev)}
+RIWAYAT: ${S.msgs.slice(-10).map(x=>(x.w==='YOU'?'USER':m.p)+': '+x.t).join(' | ')}
+Kembalikan HANYA JSON valid tanpa teks lain:
+{"assistant_message":"","analysis":{"relevance":1,"clarity":1,"specificity":1,"depth":1,"structure":1,"professionalism":1,"has_reason":false,"has_example":false,"filler_words":[],"issue":"ok|umum|terlalu_pendek|tanpa_alasan|tanpa_contoh|tidak_jelas|tidak_relevan|bercanda|tidak_tahu|menghindar|melebar","evidence":"","evidence_by":{"relevance":"","clarity":"","specificity":"","depth":"","structure":"","professionalism":""}},"improved":false,"follow_up_strategy":"spesifik|alasan|contoh|gali|klarifikasi|recovery|struktur|next_topic|closing","next_question":"","difficulty":2,"memory_update":{"goal":"","interest":"","facts":[],"reasons":[],"examples":[],"strengths":[],"weaknesses":[],"topics":[]},"should_end":false}`;
+ const j=parseAI(await Promise.race([aiCall(prompt),new Promise((_,r)=>setTimeout(()=>r(new Error('timeout')),25000))]));
+ if(!j||(!j.assistant_message&&!j.analysis))throw new Error('invalid ai json');
+ const z=normAI(j);let a=z?fromAI(t,z):analyzeAnswer(t,{mode:S.mode,sty:S.sty,q:E.cq,type:E.type});/* analisis AI tidak valid -> skor lokal, pesan AI tetap dipakai */
+ if(z&&typeof j.improved==='boolean')a.improved=j.improved;if(a.weak==='tone'&&casualOK())a.weak='ok';
+ commit(a,E);mergeMem(E,j.memory_update,a);if(z)E.ai=(E.ai||0)+1;E.aiFail=0;
+ const msg=typeof j.assistant_message==='string'?j.assistant_message.trim():'';if(!msg)return localReply(a,E,t);
+ let st=STR.includes(String(j.follow_up_strategy).toLowerCase())?String(j.follow_up_strategy).toLowerCase():'next_topic';const nq=typeof j.next_question==='string'?j.next_question.trim():'';
+ if(j.should_end===true&&(el>=S.len*60*.6||E.mq>=TGT()-1))st='closing';
+ const vg=a.q>=85&&a.reason&&a.ex&&a.weak==='ok',fu=!wrap&&st!=='closing'&&st!=='next_topic'&&E.fu<2&&!(vg&&st!=='gali')&&!(E.fu===1&&a.q>=75&&a.weak==='ok');
+ if(wrap||st==='closing'){E.phase='closing';E.fu=0}else if(fu){E.fu++;if(nq)E.cq=nq}else{E.fu=0;E.th++;E.mq++;if(nq)E.cq=nq;E.rq=E.cq}
+ E.type=qType(E.cq);if(nq)(E.asked=E.asked||[]).push(nq);return{t:msg}}
+function turn(t){const E=S.eng;if(E.phase==='closing'||E.k==='name'||!aiOn())return respond(t);return respondAI(t).catch(e=>{E.aiFail=(E.aiFail||0)+1;return respond(t)})}
+function submit(t){const bad=/tidak terdeteksi/.test(t);S.pause.push(((S.inp==='Voice'&&S.spk0?S.spk0:Date.now())-S.lastAI)/1000);S.msgs.push({w:'YOU',t});setState('thinking');$('cap').textContent='';
+ const dl=new Promise(r=>setTimeout(r,900+Math.random()*600));
+ (async()=>{let r;if(bad){S.pause.pop();r={t:'Maaf, suaramu kurang terdengar. Bisa diulang?'}}else{try{r=await turn(t)}catch(e){r={t:'Baik, silakan lanjutkan.'}}}await dl;say(r.t,()=>{r.end?setTimeout(finish,800):idle()})})()}
+function endConv(){if(confirm('Akhiri percakapan sekarang?')){try{speechSynthesis.cancel()}catch(e){}finish()}}
+function finish(){S.state='idle';go('done')}
+function sheet(o){$('tr').innerHTML=S.msgs.map(m=>`<p><b>${m.w==='YOU'?'KAMU':M[S.mode].p.toUpperCase()}</b>${m.t.replace(/</g,'&lt;')}</p>`).join('')||'<p>Belum ada percakapan.</p>';$('sheet').classList.toggle('on',!!o)}
+
+/* ---------- report ---------- */
+const esc=x=>String(x).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+function generateReport(E){const H=E.hist,n=H.length,Th={};H.forEach(a=>(Th[a.thread]=Th[a.thread]||[]).push(a));
+ const mean=x=>{x=x.filter(v=>v!=null&&!isNaN(v));return x.length?x.reduce((a,b)=>a+b,0)/x.length:null},TS=Object.values(Th),fin=TS.map(T=>T[T.length-1]),ini=TS.map(T=>T[0]);
+ H.forEach(a=>{const T=Th[a.thread],l=T[T.length-1];a.w=a!==l&&l.improved?.35:1});/* jawaban awal yang sudah diperbaiki tidak menjatuhkan nilai */
+ const sw=H.reduce((s,a)=>s+a.w,0)||1,av=k=>n?H.reduce((s,a)=>s+(a[k]||0)*a.w,0)/sw:null,voice=S.inp==='Voice'&&H.some(a=>a.secs>0),cnt=f=>H.filter(a=>a.weak===f).length;
+ const words=H.reduce((s,a)=>s+a.n,0),fill=H.reduce((s,a)=>s+(a.fill||0),0),vs=H.filter(a=>a.secs>3),vsec=vs.reduce((s,a)=>s+a.secs,0),wpm=vsec?Math.round(vs.reduce((s,a)=>s+a.n,0)/vsec*60):null,speak=H.reduce((s,a)=>s+(a.secs||0),0);
+ const pa=S.pause.length?S.pause.reduce((a,b)=>a+b,0)/S.pause.length:null,long=S.pause.filter(p=>p>8).length;
+ const weakT=TS.filter(T=>T.length>1&&(T[0].weak!=='ok'||T[0].q<62)),recT=weakT.filter(T=>T[T.length-1].improved),fq=fin.map(a=>a.q),mu=mean(fq),sd=fin.length>=3?Math.sqrt(mean(fq.map(q=>(q-mu)*(q-mu)))):null,fu=H.filter(a=>a.step>0);
+ const V={rel:av('rel'),clr:av('clr'),spc:av('spc'),dep:av('dep'),str:av('str'),pro:av('pro'),resp:fu.length?mean(fu.map(a=>a.rel)):av('rel'),rec:weakT.length?45+55*recT.length/weakT.length:null,cons:sd==null?null:cl(100-sd*2.2),
+  flu:voice&&words>=20?cl(100-fill/words*600):null,pace:voice&&wpm?cl(wpm>=95&&wpm<=175?95:wpm<95?95-(95-wpm)*1.2:95-(wpm-175)*1.2):null,pse:voice&&pa!=null?(pa<.8?70:pa<=5?92:pa<=8?76:58):null};
+ const D=voice?mean([V.flu,V.pace,V.pse]):null,Vt={rel:V.rel,clr:V.clr,str:V.str,pro:V.pro,dep:V.dep,fu:V.rec,flu:D,ex:V.spc},w=W[S.mode];let sum=0,wt=0;for(const k in w)if(Vt[k]!=null){sum+=Vt[k]*w[k];wt+=w[k]}
+ let tot=n&&wt?Math.round(sum/wt):0;if(n<3)tot=Math.min(tot,78);
+ const G={Content:mean([V.rel,V.clr,V.spc,V.dep,V.str]),Communication:mean([V.pro,V.resp,V.rec,V.cons]),Delivery:D},conf=n<3?'Terbatas':n<5?'Sedang':'Baik',ai=H.filter(a=>a.src==='ai').length;
+ const ok=[],bad=[],bw=cnt('shallow')+cnt('noReason'),ex=a=>H.filter(a2=>a2[a]).length;
+ if(V.rel>=75)ok.push('Jawabanmu umumnya relevan dengan pertanyaan.');if(n&&ex('reason')/n>=.6)ok.push('Kamu cukup konsisten memberikan alasan.');if(n&&ex('ex')/n>=.4)ok.push('Kamu mampu memberikan contoh atau pengalaman konkret.');
+ if(recT.length)ok.push('Kamu mampu memperbaiki jawaban setelah diberi arahan (recovery).');if(V.pro>=85&&L2[S.mode]>=1)ok.push('Gaya bahasamu sesuai dengan situasi.');if(voice&&words>=30&&fill/words<.03)ok.push('Kata pengisi terkendali pada transkrip suara.');
+ (E.mem.strengths||[]).slice(0,2).forEach(x=>ok.push(x));
+ if(bw)bad.push('Beberapa jawaban masih umum, singkat, atau belum disertai alasan ('+bw+' kali).');if(cnt('noExample'))bad.push('Kurang memberikan contoh konkret ('+cnt('noExample')+' kali).');if(cnt('tone'))bad.push('Gaya bahasa kurang sesuai dengan situasi ('+cnt('tone')+' kali).');
+ const oo=cnt('off')+cnt('evasive')+cnt('idk');if(oo)bad.push('Ada jawaban yang belum menjawab pertanyaan atau menghindar ('+oo+' kali).');if(cnt('unstr')+cnt('long'))bad.push('Jawaban belum terstruktur atau mulai melebar ('+(cnt('unstr')+cnt('long'))+' kali).');
+ if(voice&&words>=30&&fill/words>=.05)bad.push('Kata pengisi cukup sering pada transkrip. Coba gunakan jeda singkat.');(E.mem.weaknesses||[]).slice(0,2).forEach(x=>{if(!bad.some(b=>b.includes(x)))bad.push('Catatan coach: '+x+'.')});
+ if(V.dep!=null&&V.dep<55&&!bad.length)bad.push('Jawaban masih terlalu umum.');
+ const pat=Object.keys(LBL).map(k=>[k,cnt(k)]).filter(x=>x[1]).sort((a,b)=>b[1]-a[1]).map(x=>'Jawaban '+LBL[x[0]]+' ('+x[1]+' kali)');
+ const best=n?[...fin].sort((a,b)=>b.q-a.q)[0]:null,worst=n?[...ini].sort((a,b)=>a.q-b.q)[0]:null,wT=worst&&Th[worst.thread],wRec=!!(wT&&wT.length>1&&wT[wT.length-1].improved);
+  const rec=weakT.length&&recT.length<weakT.length?'Latih "jawab ulang": setelah dikoreksi, ulangi jawaban dengan alasan + contoh dalam 60 detik.':cnt('noExample')?'Latih jawaban spontan dengan PREP (Point, Reason, Example, Point) selama 60 detik.':bw?'Biasakan setiap jawaban memuat alasan ("karena...") lalu satu detail spesifik.':cnt('tone')?'Ulangi jawabanmu dengan bahasa baku, seolah berbicara di situasi sebenarnya.':'Pertahankan kualitasnya, lalu coba mode lain, gaya Formal, atau durasi lebih panjang.';
+ let impr='Data belum cukup untuk menilai improvement.';if(n>=4){const h=Math.floor(n/2),f=mean(H.slice(0,h).map(a=>a.q)),l=mean(H.slice(h).map(a=>a.q)),d=Math.round(l-f);impr=(d>=5?'Kualitas jawabanmu naik':d<=-5?'Kualitas jawabanmu menurun':'Kualitas jawabanmu relatif stabil')+' dari rata-rata '+Math.round(f)+' di paruh awal menjadi '+Math.round(l)+' di paruh akhir.'}
+ const pr=H.filter(a=>a.level>=4);let recTxt=weakT.length?recT.length+' dari '+weakT.length+' jawaban awal yang kurang kuat berhasil diperbaiki setelah follow-up. '+weakT.slice(0,2).map(T=>'Awal ('+Math.round(T[0].q)+'): “'+esc(T[0].t.slice(0,70))+'” → akhir ('+Math.round(T[T.length-1].q)+'): “'+esc(T[T.length-1].t.slice(0,90))+'”.').join(' '):'Tidak ada jawaban awal yang perlu dipulihkan pada sesi ini.';
+ if(pr.length)recTxt+=' Pada level pressure ('+pr.length+' jawaban), skor rata-rata '+Math.round(mean(pr.map(a=>a.q)))+'.';
+ return{V,G,tot,n,conf,ok,bad,pat,best,worst,wRec,rec,voice,pa,long,fill,wpm,speak,avgW:n?Math.round(words/n):0,impr,recTxt,level:E.level,ai,loc:n-ai}}
+function report(){const R=generateReport(S.eng),V=R.V;go('report');
+ const NM={rel:'RELEVANSI',spc:'SPESIFISITAS',dep:'KEDALAMAN',clr:'KEJELASAN',str:'STRUKTUR',pro:'PROFESIONALISME',resp:'RESPONSIVITAS',rec:'RECOVERY',cons:'KONSISTENSI',flu:'KATA PENGISI',pace:'KECEPATAN BICARA',pse:'JEDA SEBELUM MENJAWAB'},DL=['flu','pace','pse'];
+ const nm=k=>DL.includes(k)?(S.inp==='Voice'?'Data suara belum cukup':'Tidak dinilai (mode teks)'):k==='rec'?'Tidak ada jawaban yang perlu dipulihkan':k==='cons'?'Perlu minimal 3 topik':'Data belum cukup';
+ $('asp').innerHTML=Object.keys(NM).map(k=>V[k]==null?`<div><small>${NM[k]}</small><b style="font-size:14px;color:var(--mut);padding:8px 0">${nm(k)}</b><u><i data-w="0"></i></u></div>`:`<div><small>${NM[k]}</small><b>${(V[k]/20).toFixed(1)}<span style="font-size:12px;color:var(--mut)"> /5</span></b><u><i data-w="${Math.round(V[k])}"></i></u></div>`).join('');
+ $('grp').innerHTML=Object.entries(R.G).map(([k,v])=>`<div><b style="${v==null?'font-size:13px;padding:10px 0':''}">${v==null?(k==='Delivery'&&S.inp!=='Voice'?'Tidak dinilai (mode teks)':'Data belum cukup'):(v/20).toFixed(1)+' /5'}</b><small>${k==='Delivery'?'Delivery':k}</small></div>`).join('');
+ $('lbl').textContent=!R.n?'Belum ada data':R.tot>=85?'Komunikasi Sangat Baik':R.tot>=75?'Komunikasi Kuat':R.tot>=65?'Fondasi yang Baik':R.tot>=50?'Perlu Banyak Latihan':'Mulai dari Dasar';
+ $('conf').textContent='Kepercayaan evaluasi: '+R.conf+(R.n<3?' · Data sesi masih terbatas.':'');
+ $('ctx').innerHTML=`<b>MODE</b> ${M[S.mode].d}&nbsp;·&nbsp;<b>GAYA</b> ${S.sty}&nbsp;·&nbsp;<b>LEVEL AKHIR</b> ${R.level}/4&nbsp;·&nbsp;<b>ANALISIS</b> ${R.ai===R.n&&R.n?'AI semantik':R.ai?'AI ('+R.ai+') + aturan lokal ('+R.loc+')':'aturan lokal (demo, tanpa AI)'}<br><span style="color:var(--mut);font-size:14px">Standar penilaian disesuaikan dengan mode. ${S.inp==='Voice'?'Delivery dihitung dari transkrip browser (kata pengisi, kecepatan, jeda sebelum menjawab). Volume dan intonasi tidak dianalisis.':'Mode teks: aspek suara tidak dinilai.'} Kontak mata, ekspresi, dan gestur tidak dinilai.</span>`;
+ const li=a=>a.length?a.map(x=>'• '+esc(x)).join('<br>'):null;$('well').innerHTML=li(R.ok)||'Belum ada kekuatan yang menonjol; fokus dulu pada alasan dan contoh.';$('imp').innerHTML=li(R.bad)||'Tidak ada kelemahan menonjol pada sesi ini.';$('pat').innerHTML=li(R.pat)||'Tidak ada pola kesalahan yang berulang.';
+ const wk=R.worst;if(wk&&wk.q<70){const c=wk.t.replace(RX.slang,'').replace(RX.fill,'').replace(/\s+/g,' ').trim().replace(/[.!?,]+$/,'').replace(/^\w/,x=>x.toUpperCase());$('bef').textContent='“'+wk.t+'”';$('aft').innerHTML='“'+esc(c)+'. Alasannya, [tambahkan satu alasan pribadi]. Contohnya, [tambahkan satu pengalaman nyata].”<br><small style="margin-top:8px;letter-spacing:0">Kerangka perbaikan, maksud jawabanmu tidak diubah.</small>'}else{$('bef').textContent='—';$('aft').textContent='Tidak ada jawaban yang perlu diperbaiki secara signifikan.'}
+ const dim=a=>{if(!a.eb)return'';const k=[['rel','relevance'],['clr','clarity'],['spc','specificity'],['dep','depth'],['str','structure'],['pro','professionalism']].sort((x,y)=>a[x[0]]-a[y[0]])[0][1];return a.eb[k]?'<br><span style="color:var(--mut)">'+esc(String(a.eb[k]).slice(0,200))+'</span>':''};
+ const mom=a=>a?'Pertanyaan: “'+esc(a.rootQ||a.qtext||'-')+'”<br>Jawabanmu: “'+esc(a.t.slice(0,140))+'”'+(a.evidence?'<br><span style="color:var(--mut)">'+esc(a.evidence)+'</span>':'')+dim(a):'—';
+ if($('rec'))$('rec').innerHTML=R.recTxt;$('impr').innerHTML=R.impr;$('best').innerHTML=R.n?mom(R.best):'—';
+ $('worst').innerHTML=R.n&&R.worst.q<75?mom(R.worst)+(R.wRec?'<br><b style="display:inline;font-size:12px;color:var(--ac)">Sudah diperbaiki pada follow-up.</b>':''):'Tidak ada momen yang menonjol buruk.';
+ const hb=[['Kata Pengisi (transkrip)',R.voice?R.fill+' kali':'Belum dapat dinilai'],['Jeda Sebelum Menjawab',R.voice&&R.pa!=null?R.pa.toFixed(1)+' detik':'Belum dapat dinilai'],['Kecepatan Bicara',R.voice&&R.wpm?R.wpm+' kata/menit':'Belum dapat dinilai'],['Panjang Jawaban Rata-rata',R.avgW+' kata'],['Jeda Panjang (>8 dtk)',R.voice?R.long:'Belum dapat dinilai'],['Relevansi Topik',R.n?Math.round(V.rel)+'%':'—']];
+ $('hab').innerHTML=hb.map(([k,v])=>`<div><b style="${/Belum/.test(v)?'font-size:14px;padding:10px 0':''}">${v}</b><small>${k}</small></div>`).join('');
+ $('coach').textContent=(R.ok[0]||'Kamu sudah mulai berlatih, dan itu langkah awal yang baik.')+' '+(R.bad[0]||'Pertahankan konsistensi latihanmu.');$('next').textContent=R.rec;
+ setTimeout(()=>{$('ring').style.strokeDashoffset=729*(1-R.tot/100);document.querySelectorAll('.asp i').forEach(i=>i.style.width=i.dataset.w+'%');let n0=0;const iv=setInterval(()=>{n0+=Math.max(1,Math.round((R.tot-n0)/8));if(n0>=R.tot){n0=R.tot;clearInterval(iv)}$('sc').textContent=n0},40)},150);
+ if(R.n&&!S.eng.saved){S.eng.saved=1;const P=loadP(),r0=x=>x==null?null:Math.round(x),dur=Math.round((Date.now()-S.t0)/1000);
+  P.push({score:R.tot,date:Date.now(),mode:S.mode,duration:dur,dur,content:r0(R.G.Content),communication:r0(R.G.Communication),delivery:r0(R.G.Delivery),speakingTime:Math.round(R.speak),asp:Object.fromEntries(Object.entries(V).filter(e=>e[1]!=null).map(e=>[e[0],Math.round(e[1])])),improve:R.impr});try{localStorage.setItem('rt2',JSON.stringify(P))}catch(e){}}}
+function loadP(){try{return JSON.parse(localStorage.getItem('rt2')||'[]')}catch(e){return[]}}
+function drawProg(){const P=loadP(),d=P.slice(-8),W=700,H=240,x=i=>40+i*(W-80)/Math.max(1,d.length-1),y=v=>H-(v-0)/100*H+10;
+ $('empty').textContent=P.length?'':'Belum ada sesi. Mulai latihan pertamamu.';
+ $('chart').style.display=P.length?'':'none';
+ if(P.length){const path=d.map((e,i)=>(i?'L':'M')+(d.length>1?x(i):W/2)+' '+y(e.score)).join(' ');
+ $('chart').innerHTML=[25,50,75,100].map(v=>`<line x1="0" x2="${W}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="0" y="${y(v)-6}" font-size="10" fill="var(--mut)">${v}</text>`).join('')+
+ `<path d="${path}" fill="none" stroke="var(--ac)" stroke-width="2" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"><animate attributeName="stroke-dashoffset" from="1" to="0" dur="1.4s" fill="freeze"/></path>`+
+ d.map((e,i)=>{const cx=d.length>1?x(i):W/2;return`<circle cx="${cx}" cy="${y(e.score)}" r="4" fill="var(--bg)" stroke="var(--ac)" stroke-width="2"/><text x="${cx}" y="${y(e.score)-14}" font-size="12" text-anchor="middle" fill="var(--fg)">${e.score}</text><text x="${cx}" y="${H+36}" font-size="10" text-anchor="middle" fill="var(--mut)">${new Date(e.date).toLocaleDateString('id-ID',{day:'numeric',month:'short'})}</text>`}).join('')}
+ const ds=new Set(P.map(e=>new Date(e.date).toDateString()));let st=0,c=new Date();if(!ds.has(c.toDateString()))c.setDate(c.getDate()-1);while(ds.has(c.toDateString())){st++;c.setDate(c.getDate()-1)}
+ $('st1').textContent=st;$('st2').textContent=P.length;$('st3').textContent=Math.round(P.reduce((a,e)=>a+e.dur,0)/60)}
+let SM=null;try{window.claude&&claude.use&&claude.use('sample').then(x=>{SM=x;aiLabel()}).catch(()=>{})}catch(e){}
+</script></body></html>
